@@ -24,7 +24,7 @@ class MakePrediction(Resource):
         model = load_model()
         data = ([[ph_value, temperature_value]])
         col = ['pH', 'Temperature']
-        data = np.array(data)
+        #data = np.array(data)
         data = pd.DataFrame(data,columns = col)
         data = data_scaling(data)
         prediction = model.predict(data)
