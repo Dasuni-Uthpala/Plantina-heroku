@@ -59,7 +59,7 @@ List<String> vizdata;
                 Pojo pojo=response.body();
                 AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this).create();
                 alertDialog.setTitle("soil Prediction");
-                alertDialog.setMessage("Predicted Result is "+pojo.getIsHeart());
+                alertDialog.setMessage("Predicted Result is "+pojo.getPrediction());
                 alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
