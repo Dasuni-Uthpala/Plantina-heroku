@@ -13,8 +13,8 @@ model = pickle.load(open("soil_model.pkl","rb"))
 def home():
     return "Welcome to Plantina API!"
 
-@app.route("/predict", methods=["POST"])
-def post():
+@app.route("/predict/<data>", methods=["POST"])
+def post(data):
         posted_data=request.get_json(force=True)
         ph_value = posted_data['pH']
         temperature_value = posted_data['Temperature']
