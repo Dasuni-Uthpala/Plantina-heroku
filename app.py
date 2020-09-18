@@ -31,4 +31,4 @@ def post():
 #api.add_resource(MakePrediction, '/predict', methods=["POST","GET"])
 
 if __name__ == '__main__':
-        app.run(port=1235)
+        app.run()
