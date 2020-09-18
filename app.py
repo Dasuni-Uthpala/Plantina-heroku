@@ -19,7 +19,7 @@ model = pickle.load(open("soil_model.pkl","rb"))
 def home():
     return "Welcome to Plantina mobile API!"
 class SoilPrediction(Resource):
-    def post(self):
+    def get(self):
         info = request.get_json()
         #pH = float(info[0])
         #Temperature = int(info[1])
